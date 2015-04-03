@@ -48,10 +48,12 @@ def spider(l, w):
 ss = spider(3, 5);
 
 story = '''
-{people} are contestants on Jeopardy. {name} is very short {color} hair.
+{people} are contestants on Jeopardy. {name} is very short, round, and has {color} hair.
 {name} gets to select first and chooses {cat} for {jep1}.
-{name} {ans}. Before the next answer could be said, {name} noticed a spider on the console.
-{name} yelled {react} because they {fight} afraid spiders. The spider was {ss} inches big.
+{name} {ans}. Before the next answer could be said, {name} noticed a {ss} inch spider on the console.
+{name} yelled {react} because they {fight} afraid spiders.
+{name} then passed out for 10 minutes. Out of nowhere the a {cat} came and peed on {name}'s leg.
+Afterwards, {name} decided that she wanted {cat} for {jep2} and won the game.
 
 '''
 print story.format(**locals())
