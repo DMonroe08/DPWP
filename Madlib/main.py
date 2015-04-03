@@ -21,6 +21,11 @@ jep1 = 200
 jep2 = 400
 ft = 3
 
+#Mathematical operator
+win = (jep1 + jep2) * ft
+
+lose = (jep2 - jep1) / ft
+
 #Conditional Statements
 if some > 12:
     ans = "answered correctly"
@@ -46,6 +51,9 @@ while i<7:
     react
     i = i+1
 
+for h in people:
+    show = h + " now hates spiders"
+
 #Function
 def spider(l, w):
     size = l + w
@@ -58,8 +66,9 @@ story = '''
 {name} gets to select first and chooses {cat} for {jep1}.
 {name} {ans}. Before the next answer could be said, {name} noticed a {ss} inch spider on the console.
 {name} yelled {react} because they {fight} afraid spiders.
-{name} then passed out for 10 minutes. Out of nowhere the a {cat} came and peed on {name}'s leg.
+{name} then passed out for 10 minutes. Out of nowhere the a {cat} came and peed on {name}'s leg. {show}
 Afterwards, {name} decided that she wanted {cat} for {jep2} and won the game.
+{name} won {win} golden monkeys when everybody else got to take home {lose} paper clips.
 
 '''
 print story.format(**locals())
