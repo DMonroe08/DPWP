@@ -1,6 +1,7 @@
 __author__ = 'DanielleMonroe'
 
 #Strings
+#These are variable that are created by the users and effect the conditional statements below
 name = raw_input("Enter your name?  ")
 some = raw_input("Pick a number between 2-16. ")
 color = raw_input("What is your favorite color?  ")
@@ -9,6 +10,7 @@ fight = raw_input("How afraid of spiders are you? ")
 flight = raw_input("Pick a number between 4-7. ")
 
 #Array
+#Gives the predetermined names of the contestants and adds the user name
 people = ["Lulu", "George"]
 people.append(name)
 
@@ -68,6 +70,7 @@ def spider(l, w):
 
 ss = spider(3, 5);
 
+#This is the madlib that compiles all of the variables, conditions, loops, etc into a story
 story = '''
 {people} are contestants on Jeopardy. {name} is {ft} feet tall, round, and has {color} hair.
 {name} gets to select first and chooses {cat} for {jep1}.
