@@ -50,17 +50,14 @@ else:
     react = scream["Stomp"]
 
 #Loop
-#This loop is an attempt to get the gross string into the paragraph and have it repeat
-gross = "EWWW"
+#This loop repeats "welcome to jeopardy" Before the "story" section starts
+hi = "Welcome to Jeopardy"
 i = 0
-while i < 7:
-    gross
+while i < 4:
+    print hi
     i = i+1
 
-#This loop is an attempt to have the people all claim to hate spiders into the paragraph
-cont = ["Alex", "Lulu", "George"]
-for c in cont:
-    show = c + " now hates spiders"
+
 
 #Function
 #This function calculates the size of the spider that is then placed into the paragraph
@@ -76,10 +73,16 @@ story = '''
 {name} gets to select first and chooses {cat} for {jep1}.
 {name} {ans}. Before the next answer could be said, {name} noticed a {ss} inch spider on the console.
 {name} yelled {react} because they {fight} afraid spiders.
-The spider crawled on {name} and they all yelled {gross}.
-{name} then passed out for 10 minutes. Out of nowhere the a {cat} came and peed on {name}'s leg. {show}
+The spider crawled on {name} and they all yelled "EEWWWW!!!".
+{name} then passed out for 10 minutes. Out of nowhere the a {cat} came and peed on {name}'s leg.
 Afterwards, {name} decided that she wanted {cat} for {jep2} and won the game.
 {name} won {win} golden monkeys when everybody else got to take home {lose} paper clips.
 
 '''
 print story.format(**locals())
+
+
+#This loop prints out that each contestant hates spiders
+cont = ["Alex", "Lulu", "George"]
+for c in cont:
+    print c + " now hates spiders"
